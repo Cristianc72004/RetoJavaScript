@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Porcentaje</title>
+    <link rel="stylesheet" href="../public/css/tailwind.css">
+</head>
+<body class="bg-teal-600 flex items-center justify-center h-screen">
+    <div class="bg-teal-900 p-3 rounded-lg text-center w-3/5 h-4/5">
+        <h1 class="text-4xl text-teal-600 mb-4 font-mono">Calculadora de Porcentaje</h1>
+        <hr class="border-teal-600 border-t-2 mb-8">
+        <div class="flex items-center justify-center mb-8 p-8">
+            <label for="cantidad" class="text-white text-2xl mr-6 font-mono">Calcula el</label>
+            <input type="number" id="cantidad" class="w-1/4 px-1 py-0 rounded bg-teal-600 text-xl text-white" value="10">
+            <label for="porcentaje" class="text-white text-2xl mx-6 font-mono">% de</label>
+            <input type="number" id="porcentaje" class="w-1/4 px-1 py-0 rounded bg-teal-600 text-xl text-white" value="30">
+        </div>
+        <div class="flex justify-center mb-8">
+            <button id="calcularBtn" class="bg-teal-900 border-2 border-cyan-200  text-cyan-200 py-1 px-10 rounded-lg text-2xl">Calcular</button>
+        </div>
+        <div id="resultado" class="flex items-center justify-center text-4xl text-cyan-200 border border-teal-900 font-mono font-bold rounded-lg px-8 py-6">
+          Resultado: &nbsp;
+          <span id="resultadoValor"></span>
+      </div>      
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+
